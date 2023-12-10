@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {faBug} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  protected readonly faBug = faBug;
 }

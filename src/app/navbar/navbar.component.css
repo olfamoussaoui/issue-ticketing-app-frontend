@@ -1,0 +1,14 @@
+.navbar {
+  background-color: rgba(24, 34, 47, 1) !important;
+}
+.navbar-brand,
+.navbar-text,
+.nav-link {
+  color: #f1f3f5;
+}
+.navbar-toggler {
+  color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+

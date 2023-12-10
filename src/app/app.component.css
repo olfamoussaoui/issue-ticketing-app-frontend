@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --bs-body-font-family: 'Roboto', sans-serif;;
+}
+.bg-page {
+  background-color: rgba(43, 52, 65, 1);
+}
