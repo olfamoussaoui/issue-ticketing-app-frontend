@@ -1,0 +1,71 @@
+<div class="d-flex justify-content-center">
+  <form class="d-flex flex-column gap-1 w-50">
+    <h3>Create Ticket</h3>
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title">
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" id="description" rows="5"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="category" class="form-label">Category</label>
+      <select class="form-select form-select-sm" id="category">
+        <option value="hardware problem">Hardware Problem</option>
+        <option value="software problem">Hardware Problem</option>
+        <option value="project">Project</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Priority</label>
+      <div class="d-flex">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="priority" id="priority-1">
+          <label class="form-check-label" for="priority-1">
+            1
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="priority" id="priority-2">
+          <label class="form-check-label" for="priority-2">
+            2
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="priority" id="priority-3">
+          <label class="form-check-label" for="priority-3">
+            3
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="priority" id="priority-4">
+          <label class="form-check-label" for="priority-4">
+            4
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="priority" id="priority-5">
+          <label class="form-check-label" for="priority-5">
+            5
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="progress" class="form-label">Progress</label>
+      <input type="range" min="0" max="100" step="10" class="form-range" id="progress" name="progress" value="0">
+    </div>
+    <div class="mb-3">
+      <label for="status" class="form-label">Status</label>
+      <select class="form-select form-select-sm" id="status">
+        <option value="not started">Not Started</option>
+        <option value="started">Started</option>
+        <option value="done">Done</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary w-100" id="submitBtn">Create Ticket</button>
+    </div>
+  </form>
+</div>
