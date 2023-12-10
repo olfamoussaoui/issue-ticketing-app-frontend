@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {faFire, faXmark} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-issue-detail',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./issue-detail.component.css']
 })
 export class IssueDetailComponent {
-
+  protected readonly faXmark = faXmark;
+  protected readonly faFire = faFire;
 }
