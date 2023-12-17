@@ -12,9 +12,7 @@
     <div class="mb-3">
       <label for="category" class="form-label">Category</label>
       <select class="form-select form-select-sm" id="category">
-        <option value="hardware problem">Hardware Problem</option>
-        <option value="software problem">Hardware Problem</option>
-        <option value="project">Project</option>
+        <option *ngFor="let c of keys(category)" [value]="c">{{ c | issueCategoryText}}</option>
       </select>
     </div>
     <div class="mb-3">
@@ -59,9 +57,7 @@
     <div class="mb-3">
       <label for="status" class="form-label">Status</label>
       <select class="form-select form-select-sm" id="status">
-        <option value="not started">Not Started</option>
-        <option value="started">Started</option>
-        <option value="done">Done</option>
+        <option *ngFor="let s of keys(status)" [value]="s">{{ s | issueStatusText }}</option>
       </select>
     </div>
     <div class="mb-3">

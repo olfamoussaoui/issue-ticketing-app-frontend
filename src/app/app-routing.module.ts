@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {IssueFormComponent} from "./issue-form/issue-form.component";
-import {IssueListComponent} from "./issue-list/issue-list.component";
+import {IssuesComponent} from "./issues/issues.component";
 
 
 const routes: Routes = [
-  {path: '', component: IssueListComponent},
+  {path: '', component: IssuesComponent},
   {path: 'new', component: IssueFormComponent},
 ]
 @NgModule({

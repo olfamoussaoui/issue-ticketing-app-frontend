@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Category, Status} from "../models/Issue";
 
 @Component({
   selector: 'app-issue-form',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./issue-form.component.css']
 })
 export class IssueFormComponent {
-
+  protected keys = Object.keys;
+  protected readonly status = Status;
+  protected readonly category = Category;
 }

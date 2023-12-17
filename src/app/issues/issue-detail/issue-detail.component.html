@@ -1,0 +1,33 @@
+<div class="flex-column issue-ticket rounded-3 shadow-lg p-3 m-2">
+  <div>
+    <div class="flex-row mb-3">
+      <div class="d-flex justify-content-start align-baseline">
+        <div *ngFor="let i of getRange(issue.priority);">
+          <fa-icon [icon]="faFire" class="text-red-400"></fa-icon>
+        </div>
+        <div class="ms-auto" (click)="deleteIssue(issue)">
+          <fa-icon [icon]="faXmark" class="delete-icon text-red-400"></fa-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4 class="text-truncate">{{ issue.title }}</h4>
+  <hr class="border-1 mb-2"/>
+  <p class="text-truncate-2-lines">
+    {{ issue.description }}
+  </p>
+  <div class="d-flex flex-row justify-content-between mt-2">
+    <div class="d-flex flex-column">
+      <p class="my-1">{{ issue.creationDate | date:'medium' }}</p>
+      <div class="progress" style="height: 10px;">
+        <div class="progress-bar" role="progressbar" [style.width.%]="issue.progress" aria-valuenow="75"
+             aria-valuemin="0"
+             aria-valuemax="100"></div>
+      </div>
+    </div>
+    <div class="flex-row align-self-end">
+      <span
+        class="badge d-inline rounded-5 px-2 py-1 fw-bold status-text-gray {{issue.status  | issueStatusColor}}">{{ issue.status | issueStatusText }}</span>
+    </div>
+  </div>
+</div>

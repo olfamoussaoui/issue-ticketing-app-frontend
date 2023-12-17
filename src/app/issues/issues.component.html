@@ -1,0 +1,7 @@
+<div class="p-5">
+  <div class="row row-cols-lg-2 row-cols-xl-4">
+    <div *ngFor="let issue of issues">
+      <app-issue-detail [issue]="issue"></app-issue-detail>
+    </div>
+  </div>
+</div>
